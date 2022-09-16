@@ -1,0 +1,16 @@
+@InProceedings{P18-1130,
+  author = 	"Ma, Xuezhe
+		and Hu, Zecong
+		and Liu, Jingzhou
+		and Peng, Nanyun
+		and Neubig, Graham
+		and Hovy, Eduard",
+  title = 	"Stack-Pointer Networks for Dependency Parsing",
+  booktitle = 	"Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  year = 	"2018",
+  publisher = 	"Association for Computational Linguistics",
+  pages = 	"1403--1414",
+  location = 	"Melbourne, Australia",
+  url = 	"http://aclweb.org/anthology/P18-1130"
+}
+

@@ -1,0 +1,9 @@
+@InProceedings{iclr2019:ma:mae,
+  author    = {Ma, Xuezhe  and  Chunting Zhou and  Hovy, Eduard},
+  title     = {MAE: Mutual Posterior-Divergence Regularization for Variational AutoEncoders},
+  booktitle = {Proceedings of the 7th International Conference on Learning Representations (ICLR-2019)},
+  month     = {May},
+  year      = {2019},
+  address   = {New Orleans, Louisiana, USA}
+}
+

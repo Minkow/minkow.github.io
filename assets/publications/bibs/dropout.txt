@@ -1,0 +1,9 @@
+@InProceedings{iclr2017:ma:dropout,
+  author    = {Ma, Xuezhe  and  Gao, Yingkai  and  Hu, Zhiting and  Yu, Yaoliang  and Deng, Yuntian  and  Hovy, Eduard},
+  title     = {Dropout with Expectation-linear Regularization},
+  booktitle = {Proceedings of the 5th International Conference on Learning Representations (ICLR-2017)},
+  month     = {April},
+  year      = {2017},
+  address   = {Toulon, France}
+}
+

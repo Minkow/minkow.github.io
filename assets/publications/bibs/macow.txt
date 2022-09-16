@@ -1,0 +1,8 @@
+@article{ma2019macow,
+  title={MaCow: Masked Convolutional Generative Flow},
+  author={Ma, Xuezhe and Kong, Xiang and Zhang, Shanghang and Hovy, Eduard},
+  journal={Advances in Neural Information Processing Systems (NeurIPS-2019)},
+  volume={32},
+  pages={5893--5902},
+  year={2019}
+}

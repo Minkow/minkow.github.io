@@ -1,0 +1,8 @@
+@article{ma2021luna,
+  title={Luna: Linear unified nested attention},
+  author={Ma, Xuezhe and Kong, Xiang and Wang, Sinong and Zhou, Chunting and May, Jonathan and Ma, Hao and Zettlemoyer, Luke},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={2441--2453},
+  year={2021}
+}

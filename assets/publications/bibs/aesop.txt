@@ -1,0 +1,8 @@
+@inproceedings{sun2019aesop,
+    title = {AESOP: Paraphrase Generation with Adaptive Syntactic Control},
+    author = {Sun, Jiao and Ma, Xuezhe and Peng, Nanyun},
+    booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+    address = {Punta Cana, Dominican Republic},
+    month = {November},
+    year = {2021}
+}

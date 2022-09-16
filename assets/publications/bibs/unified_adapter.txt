@@ -1,0 +1,6 @@
+@inproceedings{he2022towards,
+  title={Towards a Unified View of Parameter-Efficient Transfer Learning},
+  author={He, Junxian and Zhou, Chunting and Ma, Xuezhe and Berg-Kirkpatrick, Taylor and Neubig, Graham},
+  booktitle={Proceedings of the 10th International Conference on Learning Representations (ICLR-2022)},
+  year={2022}
+}
