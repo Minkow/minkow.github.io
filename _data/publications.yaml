@@ -1,6 +1,6 @@
 papers:
   - title: "Repo4QA: Answering Coding Questions via Dense Retrieval on GitHub Repositories"
-    authors: "<b>Minyu Chen</b>, Guoqiang Li, Chen Ma, Jingyang Li1, Hongfei Fu1"
+    authors: "<b>Minyu Chen</b>, Guoqiang Li, Chen Ma, Jingyang Li, Hongfei Fu"
     venue: "The 29th International Conference on Computational Linguistics (COLING 2022)"
 #     arXiv: "https://arxiv.org/abs/2009.13586"
     paper_pdf: "https://aclanthology.org/2022.coling-1.136.pdf"
