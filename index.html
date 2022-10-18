@@ -6,13 +6,16 @@ title: Home
 <div class="docs-section" id="bio">
   <h4><b>Bio</b></h4>
   <p>
-      <br>I have been a Computer Scientist in Information Sciences Institute and a Research Assistant Professor in Department of Computer Science, at University of Southern California since Fall 2020.<br>
+
+      <!-- <br>I have been a Computer Scientist in Information Sciences Institute and a Research Assistant Professor in Department of Computer Science, at University of Southern California since Fall 2020.<br>
     I got my Ph.D degree in Language Technologies Institute at Carnegie Mellon University, where I was working with Prof. <a href=http://www.cs.cmu.edu/~hovy/ target="_blank">Eduard Hovy</a>.
     Before coming to CMU, I was a master student of Center for Brain-like Computing and Machine Intelligence (BCMI), Shanghai Jiao Tong University, Shanghai, China.
-    I received my Bachelor degree in Computer Science from Shanghai Jiao Tong University, where I was a member of <a href=http://acm.sjtu.edu.cn/ target="_blank">ACM Class</a>, now part of Zhiyuan College in SJTU.
+    I received my Bachelor degree in Computer Science from Shanghai Jiao Tong University, where I was a member of <a href=http://acm.sjtu.edu.cn/ target="_blank">ACM Class</a>, now part of Zhiyuan College in SJTU. -->
+    <br> I received my BE degree in computer science and technology from the University of Science and Technology of China and my MS degree in software engineering from Shanghai Jiao Tong University, where he is currently working toward a Ph.D. degree of computer science and technology,
+     under the supervision of Prof. <a href=https://basics.sjtu.edu.cn/~liguoqiang>Guoqiang Li</a>. My research interests include natural language processing, knowledge graphs, and AI verification.
   </p>
   <p>
-    I believe that representation learning techniques based on deep learning methods can fundamentally transform the conventional feature designing paradigm.
+    <!-- I believe that representation learning techniques based on deep learning methods can fundamentally transform the conventional feature designing paradigm.
     Representation learning can, in principle, automatically learn representations that are mathematically and computationally convenient to process.
     Furthermore, beyond learning representations for specific tasks, representation learning allows us to identify and disentangle the underlying causal factors,
     to tease apart the underlying dependencies of the data, so that it becomes easier to understand, to classify, or to perform other tasks such as, even, controllable and interpretable data generation or manipulation.
@@ -31,7 +34,7 @@ title: Home
     <dt><b>Applications of representation learning techniques</b></dt>
     <dd>We apply (unsupervised and/or weakly-supervised) representation learning techniques, such as representation transfer learning, to NLP and CV tasks in different domains to advance the state-of-the-art and/or
       to reduce requirement of human annotated resources.</dd>
-    </dl>
+    </dl> -->
   </p>
 
 
@@ -87,46 +90,6 @@ title: Home
   </ul>
 
   <div class="tab-content">
-
-    <!-- <div class="tab-pane" id="papers-sel">
-      {% assign papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.bibtex %}
-              <a class="button" href="{{ paper.bibtex | prepend: site.baseurl }}" target="_blank">Bib</a>
-            {% endif %}
-            {% if paper.arXiv %}
-              <a class="button" href="{{ paper.arXiv }}" target="_blank">ArXiv</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p>
-            <i>{{ paper.venue }}</i>
-            {% if paper.award %}
-              (<b>{{ paper.award }}</b>)
-            {% endif %}
-          </p>
-        </div>
-      {% endfor %}
-    </div> -->
-
-    <!-- All PAPERS -->
     <div class="tab-pane active" id="papers-all">
       {% assign papers = site.data.publications.papers %}
       {% for paper in papers %}
@@ -164,206 +127,8 @@ title: Home
         </div>
       {% endfor %}
     </div>
-    
-
-    <!-- ML PAPERS
-    <div class="tab-pane" id="papers-RL">
-      {% assign ml_papers = site.data.publications.papers | where: "rl", "y" %}
-      {% for paper in ml_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.bibtex %}
-              <a class="button" href="{{ paper.bibtex | prepend: site.baseurl }}" target="_blank">Bib</a>
-            {% endif %}
-            {% if paper.arXiv %}
-              <a class="button" href="{{ paper.arXiv }}" target="_blank">ArXiv</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p>
-            <i>{{ paper.venue }}</i>
-            {% if paper.award %}
-              (<b>{{ paper.award }}</b>)
-            {% endif %}
-          </p>
-        </div>
-      {% endfor %}
-    </div>
-
-    <!-- NLP PAPERS -->
-    <div class="tab-pane" id="papers-NLP">
-      {% assign nlp_papers = site.data.publications.papers | where: "nlp", "y" %}
-      {% for paper in nlp_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.bibtex %}
-              <a class="button" href="{{ paper.bibtex | prepend: site.baseurl }}" target="_blank">Bib</a>
-            {% endif %}
-            {% if paper.arXiv %}
-              <a class="button" href="{{ paper.arXiv }}" target="_blank">ArXiv</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p>
-            <i>{{ paper.venue }}</i>
-            {% if paper.award %}
-              (<b>{{ paper.award }}</b>)
-            {% endif %}
-          </p>
-        </div>
-      {% endfor %}
-    </div>
-    <!-- Bio PAPERS -->
-    <div class="tab-pane" id="papers-Bio">
-      {% assign bio_papers = site.data.publications.papers | where: "bio", "y" %}
-      {% for paper in bio_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.bibtex %}
-              <a class="button" href="{{ paper.bibtex | prepend: site.baseurl }}" target="_blank">Bib</a>
-            {% endif %}
-            {% if paper.arXiv %}
-              <a class="button" href="{{ paper.arXiv }}" target="_blank">ArXiv</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p>
-            <i>{{ paper.venue }}</i>
-            {% if paper.award %}
-              (<b>{{ paper.award }}</b>)
-            {% endif %}
-          </p>
-        </div>
-      {% endfor %}
-    </div> -->
-    
   </div>
 </div>
-
-<!-- <div class="docs-section" id="talks">
-  <h4>Talks and slides</h4>
-  {% assign current_talks = site.data.talks.talks | where: "category", "current" %}
-  {% for talk in current_talks %}
-  <div class="talk">
-    <p class="title"><b>{{ talk.name }}</b> ({{ talk.time }}): <a href={{talk.link}} target="_blank">{{ talk.title }}</a></p>
-  </div>
-  {% endfor %}
-</div> -->
-
-
-<!---
-<div class="docs-section" id="people">
-  <h4>Advisees</h4>
-
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#current">Current</div></li>
-    <li><div class="button" data-ref="#former">Former</div></li>
-  </ul>
-
-  <div class="tab-content">
-
-    <div class="tab-pane active" id="current">
-      {% assign current_people = site.data.students.students | where: "category", "current" %}
-      {% for person in current_people %}
-        <div class="paper">
-          <p class="title"><b>{{ person.name }}</b> ({{ person.time }})</p>
-          <p><i>{{ person.place }}</i></p>
-          {% if person.current %}
-          <p> {{ person.current }} </p>
-          {% endif %}
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="former">
-      {% assign former_people = site.data.students.students | where: "category", "former" %}
-      {% for person in former_people %}
-        <div class="paper">
-          <p class="title"><b>{{ person.name }}</b> ({{ person.time }})</p>
-          <p><i>{{ person.place }}</i></p>
-          {% if person.current %}
-          <p> {{ person.current }} </p>
-          {% endif %}
-        </div>
-      {% endfor %}
-    </div>
-    
-  </div>
-</div>
---->
-
-
-
-
-<!--- ========== RESUME ==========
-<div class="docs-section" id="resume">
-  <h4>Resume</h4>
-
-  <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
---->
 
 
 <div class="docs-section" id="ack">
