@@ -35,8 +35,19 @@ papers:
     bio: n
 
   - title: "Can Language Models Pretend Solvers? Logic Code Simulation with LLMs"
-    authors: "<b>Minyu Chen</b>, Guoqiang Li, Li Wu, Runzhe Liu, Yanni Su, Xiaoning Chang, Jingling Xue"
-    venue: "International Symposium on Dependable Software Engineering: Theories, Tools and Applications (2024)"
+    authors: "<b>Minyu Chen</b>, Guoqiang Li, Ling-I Wu, Ruibang Liu, Yanni Su, Xiaoning Chang, Jianxin Xue"
+    venue: "International Symposium on Dependable Software Engineering: Theories, Tools and Applications (SETTA 2024)"
+    ccf: C
+    selected: y
+    rl: n
+    cv: y
+    nlp: n
+    bio: n
+
+  - title: "DCoL-A: Agentic Dual Chain of Thinking Helps LLMs Pretend Logic Solvers"
+    authors: "<b>Minyu Chen</b>, Ling-I Wu, Ruibang Liu, Xi Chang, Jianxin Xue, Guoqiang Li*"
+    venue: "Journal of Systems Architecture (accepted, CCF-B)"
+    ccf: B
     selected: y
     rl: n
     cv: y
@@ -56,6 +67,7 @@ papers:
   - title: "Repo4QA: Answering Coding Questions via Dense Retrieval on GitHub Repositories"
     authors: "<b>Minyu Chen</b>, Guoqiang Li, Chen Ma, Jingyang Li, Hongfei Fu"
     venue: "The 29th International Conference on Computational Linguistics (COLING 2022)"
+    ccf: B
     paper_pdf: "https://aclanthology.org/2022.coling-1.136.pdf"
     code: "https://github.com/minkow/repo4qa"
     selected: y
@@ -63,15 +75,6 @@ papers:
     cv: n
     nlp: y
     bio: n
-
-  - title: "ChatGPT for Mechanobiology and Medicine: A Perspective"
-    authors: "<b>Minyu Chen</b>, Guoqiang Li"
-    venue: "Mechanobiology in Medicine 1(1) (2023)"
-    selected: n
-    rl: n
-    cv: n
-    nlp: n
-    bio: y
 
   # - title: "Towards a Unified View of Parameter-Efficient Transfer Learning"
   #   authors: "Junxian He<b>*</b>, Chunting Zhou<b>*</b>, <b>Xuezhe Ma</b>, Taylor Berg-Kirkpatrick, Graham Neubig"
