@@ -6,8 +6,7 @@ title: Home
 <div class="docs-section" id="bio">
   <h4><b>Bio</b></h4>
   <p>
-    <br> I received my BE degree in computer science and technology from the University of Science and Technology of China and my MS degree in software engineering from Shanghai Jiao Tong University, where I'm currently working toward a Ph.D. degree of computer science and technology,
-     under the supervision of Prof. <a href=https://basics.sjtu.edu.cn/~liguoqiang>Guoqiang Li</a>. My research interests include natural language processing, knowledge graphs, and AI verification.
+    <br> I received my B.E. degree in computer science and technology from the University of Science and Technology of China, and my M.S. and Ph.D. degrees from Shanghai Jiao Tong University, under the supervision of Prof. <a href=https://basics.sjtu.edu.cn/~liguoqiang>Guoqiang Li</a>. I will join Shenzhen Technology University as an Assistant Professor in April 2026. My research interests include code intelligence and large language models.
   </p>
 </div>
 
@@ -91,8 +90,11 @@ title: Home
           <p>{{ paper.authors }}</p>
           <p>
             <i>{{ paper.venue }}</i>
+            {% if paper.ccf %}
+              <span class="ccf-tag ccf-{{ paper.ccf | downcase }}">CCF-{{ paper.ccf }}</span>
+            {% endif %}
             {% if paper.award %}
-              (<b>{{ paper.award }}</b>)
+              <span class="award-tag">{{ paper.award }}</span>
             {% endif %}
           </p>
         </div>
