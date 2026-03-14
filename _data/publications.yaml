@@ -42,8 +42,8 @@ papers:
     bio: n
 
   - title: "Enhancing Automated Loop Invariant Generation for Complex Programs with Large Language Models"
-    authors: "Runzhe Liu, <b>Minyu Chen</b>, Li Wu, Jinyang Ke, Guoqiang Li"
-    venue: "Science of Computer Programming (2025)"
+    authors: "Runzhe Liu, <b>Minyu Chen</b>, Ling-I Wu, Jinyang Ke, Guoqiang Li"
+    venue: "Science of Computer Programming (2025, CCF-B)"
     selected: y
     rl: n
     cv: y
