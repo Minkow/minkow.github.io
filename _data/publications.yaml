@@ -1,7 +1,9 @@
 papers:
   - title: "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics"
-    authors: "Li Wu, Wenhao Wu, <b>Minyu Chen</b>, Junjie Xue, Guoqiang Li"
+    authors: "Ling-I Wu, Weijie Wu, <b>Minyu Chen</b>, Jianxin Xue, Guoqiang Li"
     venue: "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP 2025, CCF-B)"
+    paper_pdf: "https://aclanthology.org/2025.emnlp-main.1307.pdf"
+    arXiv: "https://doi.org/10.18653/v1/2025.emnlp-main.1307"
     selected: y
     rl: n
     cv: n
@@ -9,8 +11,10 @@ papers:
     bio: n
 
   - title: "DCE-LLM: Dead Code Elimination with Large Language Models"
-    authors: "<b>Minyu Chen</b>, Guoqiang Li, Li Wu, Runzhe Liu"
-    venue: "Proceedings of the 2025 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2025, CCF-B)"
+    authors: "<b>Minyu Chen</b>, Guoqiang Li, Ling-I Wu, Ruibang Liu"
+    venue: "Proceedings of the 2025 Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2025, CCF-B)"
+    paper_pdf: "https://aclanthology.org/2025.naacl-long.501.pdf"
+    arXiv: "https://doi.org/10.18653/v1/2025.naacl-long.501"
     code: "https://github.com/Minkow/DCE-LLM"
     selected: y
     rl: n
@@ -19,8 +23,9 @@ papers:
     bio: n
 
   - title: "Certified Local Transferability for Evaluating Adversarial Attacks"
-    authors: "<b>Minyu Chen</b>, Jialong Li, Li Wu, Guoqiang Li"
-    venue: "IEEE Transactions on Artificial Intelligence (IEEE TAI 2025)"
+    authors: "<b>Minyu Chen</b>, Jingyang Li, Ling-I Wu, Guoqiang Li"
+    venue: "IEEE Transactions on Artificial Intelligence (IEEE TAI)"
+    arXiv: "https://doi.org/10.2139/ssrn.5076854"
     selected: y
     rl: n
     cv: y
