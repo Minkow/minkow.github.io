@@ -79,6 +79,53 @@ h4 {
 .image {
   text-align: center; }
 
+/*  ================ Experience styling  ================ */
+.experience-list {
+  margin-top: 20px;
+}
+.experience-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  column-gap: 28px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+.experience-item:first-child {
+  padding-top: 4px;
+}
+.experience-item:last-child {
+  border-bottom: 0;
+}
+.experience-time {
+  color: #777;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.experience-place {
+  font-weight: 600;
+  line-height: 1.35;
+}
+.experience-title {
+  margin-top: 3px;
+  line-height: 1.45;
+}
+.experience-subtitle {
+  margin-top: 2px;
+  color: #666;
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+@media (max-width: 550px) {
+  .experience-item {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+  }
+  .experience-time {
+    font-size: 1.25rem;
+  }
+}
+
 /*  ================ Project styling  ================ */
 .project-container {
   margin-bottom: 30px;
