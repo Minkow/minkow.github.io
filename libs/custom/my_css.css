@@ -80,26 +80,42 @@ h4 {
   text-align: center; }
 
 /*  ================ Experience styling  ================ */
-.experience-list {
+.experience-current {
   margin-top: 20px;
+  margin-bottom: 26px;
 }
-.experience-item {
+.experience-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 34px;
+  align-items: start;
+}
+.experience-column h5 {
+  margin-bottom: 10px;
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #444;
+}
+.experience-card {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.experience-card:last-child {
+  border-bottom: 0;
+}
+.current-card {
   display: grid;
   grid-template-columns: 150px 1fr;
   column-gap: 28px;
-  padding: 18px 0;
-  border-bottom: 1px solid #eee;
-}
-.experience-item:first-child {
-  padding-top: 4px;
-}
-.experience-item:last-child {
-  border-bottom: 0;
+  padding: 18px 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fbfbfb;
 }
 .experience-time {
   color: #777;
-  font-size: 1.35rem;
-  line-height: 1.6;
+  font-size: 1.32rem;
+  line-height: 1.55;
   white-space: nowrap;
 }
 .experience-place {
@@ -113,11 +129,15 @@ h4 {
 .experience-subtitle {
   margin-top: 2px;
   color: #666;
-  font-size: 1.35rem;
+  font-size: 1.32rem;
   line-height: 1.45;
 }
-@media (max-width: 550px) {
-  .experience-item {
+@media (max-width: 700px) {
+  .experience-columns {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  .current-card {
     grid-template-columns: 1fr;
     row-gap: 4px;
   }

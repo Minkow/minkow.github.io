@@ -109,9 +109,13 @@ title: Home
 
 <!--   <p>Full Resume in <a href={{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p> -->
 
-  <div class="experience-list">
-    {% for exp in site.data.experience.experiences %}
-      <div class="experience-item">
+  {% assign current_positions = site.data.experience.experiences | where: "category", "current" %}
+  {% assign education = site.data.experience.experiences | where: "category", "education" %}
+  {% assign internships = site.data.experience.experiences | where: "category", "internship" %}
+
+  <div class="experience-current">
+    {% for exp in current_positions %}
+      <div class="experience-card current-card">
         <div class="experience-time">{{ exp.time }}</div>
         <div class="experience-body">
           <div class="experience-place">{{ exp.place }}</div>
@@ -122,6 +126,40 @@ title: Home
         </div>
       </div>
     {% endfor %}
+  </div>
+
+  <div class="experience-columns">
+    <div class="experience-column">
+      <h5>Education</h5>
+      {% for exp in education %}
+        <div class="experience-card">
+          <div class="experience-time">{{ exp.time }}</div>
+          <div class="experience-body">
+            <div class="experience-place">{{ exp.place }}</div>
+            <div class="experience-title">{{ exp.title }}</div>
+            {% if exp.subtitle and exp.subtitle != "" %}
+              <div class="experience-subtitle">{{ exp.subtitle }}</div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="experience-column">
+      <h5>Research & Industry Internships</h5>
+      {% for exp in internships %}
+        <div class="experience-card">
+          <div class="experience-time">{{ exp.time }}</div>
+          <div class="experience-body">
+            <div class="experience-place">{{ exp.place }}</div>
+            <div class="experience-title">{{ exp.title }}</div>
+            {% if exp.subtitle and exp.subtitle != "" %}
+              <div class="experience-subtitle">{{ exp.subtitle }}</div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
