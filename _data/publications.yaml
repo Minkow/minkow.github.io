@@ -1,7 +1,7 @@
 papers:
   - title: "TipCoder: Reinforcement Learning Boosted Test-time Instruction Proposer for Code Generation"
     authors: "<b>Minyu Chen</b>, Sihao Wu, Ling-I Wu, Song Qin, Jingyang Li, Lei Ning, Jianxin Xue, Guoqiang Li"
-    venue: "Findings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026), accepted"
+    venue: "Findings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)"
     ccf: B
     paper_pdf: "https://openreview.net/pdf?id=4wBklwKPyF"
     selected: y
@@ -12,7 +12,7 @@ papers:
 
   - title: "Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration"
     authors: "Ling-I Wu, <b>Minyu Chen</b>, Jingyang Li, Xi Chang, Guoqiang Li*"
-    venue: "Findings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026), accepted"
+    venue: "Findings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)"
     ccf: A
     selected: y
     rl: n
@@ -67,7 +67,7 @@ papers:
 
   - title: "DCoL-A: Agentic Dual Chain of Thinking Helps LLMs Pretend Logic Solvers"
     authors: "<b>Minyu Chen</b>, Ling-I Wu, Ruibang Liu, Xi Chang, Jianxin Xue, Guoqiang Li*"
-    venue: "Journal of Systems Architecture (accepted, CCF-B)"
+    venue: "Journal of Systems Architecture"
     ccf: B
     selected: y
     rl: n
