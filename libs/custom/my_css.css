@@ -470,6 +470,12 @@ a:focus-visible {
   text-decoration: none;
 }
 
+.footer-links span {
+  margin: 0;
+  color: #dce5ea;
+  font-size: 0.8rem;
+}
+
 .footer-links a:hover {
   color: #fff;
 }
@@ -559,11 +565,6 @@ a:focus-visible {
     padding: 21px 20px;
   }
 
-  .experience-columns {
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
-
   .current-card {
     grid-template-columns: 1fr;
     gap: 7px;
@@ -577,6 +578,11 @@ a:focus-visible {
 }
 
 @media (max-width: 520px) {
+  .experience-columns {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }
