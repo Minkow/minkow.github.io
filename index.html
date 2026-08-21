@@ -2,112 +2,73 @@
 layout: default
 title: Home
 ---
-<!-- ========== BIO ========== -->
-<div class="docs-section" id="bio">
-  <h4><b>Bio</b></h4>
-  <p>
-    <br> I received my B.E. degree in computer science and technology from the University of Science and Technology of China, and my M.S. and Ph.D. degrees from Shanghai Jiao Tong University, under the supervision of Prof. <a href=https://basics.sjtu.edu.cn/~liguoqiang>Guoqiang Li</a>. I am an Assistant Professor at Shenzhen Technology University. My research interests include code intelligence and large language models.
+
+<section class="docs-section bio-section" id="bio" aria-labelledby="bio-heading">
+  <div class="section-heading">
+    <p class="section-kicker">About</p>
+    <h2 id="bio-heading">Bio</h2>
+  </div>
+  <p class="bio-copy">
+    I received my B.E. degree in Computer Science and Technology from the University of Science and Technology of China, and my M.S. and Ph.D. degrees from Shanghai Jiao Tong University, under the supervision of Prof. <a href="https://basics.sjtu.edu.cn/~liguoqiang" target="_blank" rel="noopener noreferrer">Guoqiang Li</a>. I am an Assistant Professor at Shenzhen Technology University. My research interests include code intelligence and large language models.
   </p>
-</div>
+</section>
 
-<!--- ========== PROJECTS ==========
-<h4><b>Recent Research Areas</b></h4>
+<section class="docs-section" id="publications" aria-labelledby="publications-heading">
+  <div class="section-heading">
+    <p class="section-kicker">Research</p>
+    <h2 id="publications-heading">Publications</h2>
+  </div>
 
-<div class="docs-section" id="projects">
-  {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-    {% for project in selected_projects %}
-      {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <center>
-                  <b>{{ project.title }}</b> <br/>
-                  </center>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-</div>
---->
-
-
-
-
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h4><b>Publications</b></h4>
-
-<!--   <p>Most recent publications on <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>.</p> -->
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-all">All</div></li>    
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-all">
-      {% assign papers = site.data.publications.papers %}
-      {% for paper in papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
+  <div class="publication-list">
+    {% assign papers = site.data.publications.papers %}
+    {% for paper in papers %}
+      <article class="publication-card">
+        <div class="publication-heading">
+          <h3>{{ paper.title }}</h3>
+          <div class="publication-links" aria-label="Links for {{ paper.title | strip_html }}">
             {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+              <a href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">PDF</a>
             {% endif %}
             {% if paper.bibtex %}
-              <a class="button" href="{{ paper.bibtex | prepend: site.baseurl }}" target="_blank">Bib</a>
+              <a href="{{ paper.bibtex | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">BibTeX</a>
             {% endif %}
             {% if paper.arXiv %}
-              <a class="button" href="{{ paper.arXiv }}" target="_blank">ArXiv</a>
+              <a href="{{ paper.arXiv }}" target="_blank" rel="noopener noreferrer">{% if paper.arXiv contains 'arxiv.org' %}arXiv{% else %}DOI{% endif %}</a>
             {% endif %}
             {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              <a href="{{ paper.slides | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">Slides</a>
             {% endif %}
             {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              <a href="{{ paper.poster | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">Poster</a>
             {% endif %}
             {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              <a href="{{ paper.video }}" target="_blank" rel="noopener noreferrer">Video</a>
             {% endif %}
             {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              <a href="{{ paper.code }}" target="_blank" rel="noopener noreferrer">Code</a>
             {% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p>
-            <i>{{ paper.venue }}</i>
-            {% if paper.ccf %}
-              <span class="ccf-tag ccf-{{ paper.ccf | downcase }}">CCF-{{ paper.ccf }}</span>
-            {% endif %}
-            {% if paper.award %}
-              <span class="award-tag">{{ paper.award }}</span>
-            {% endif %}
-          </p>
+          </div>
         </div>
-      {% endfor %}
-    </div>
+        <p class="publication-authors">{{ paper.authors }}</p>
+        <p class="publication-venue">
+          {{ paper.venue }}
+          {% if paper.ccf %}
+            <span class="ccf-tag ccf-{{ paper.ccf | downcase }}">CCF-{{ paper.ccf }}</span>
+          {% endif %}
+          {% if paper.award %}
+            <span class="award-tag">{{ paper.award }}</span>
+          {% endif %}
+        </p>
+      </article>
+    {% endfor %}
   </div>
-</div>
+</section>
 
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4><b>Experiences</b></h4>
-
-<!--   <p>Full Resume in <a href={{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p> -->
+<section class="docs-section" id="resume" aria-labelledby="experience-heading">
+  <div class="section-heading">
+    <p class="section-kicker">Background</p>
+    <h2 id="experience-heading">Experience</h2>
+  </div>
 
   {% assign current_positions = site.data.experience.experiences | where: "category", "current" %}
   {% assign education = site.data.experience.experiences | where: "category", "education" %}
@@ -115,58 +76,54 @@ title: Home
 
   <div class="experience-current">
     {% for exp in current_positions %}
-      <div class="experience-card current-card">
+      <article class="experience-card current-card">
         <div class="experience-time">{{ exp.time }}</div>
         <div class="experience-body">
-          <div class="experience-place">{{ exp.place }}</div>
+          <h3 class="experience-place">{{ exp.place }}</h3>
           <div class="experience-title">{{ exp.title }}</div>
           {% if exp.subtitle and exp.subtitle != "" %}
             <div class="experience-subtitle">{{ exp.subtitle }}</div>
           {% endif %}
         </div>
-      </div>
+      </article>
     {% endfor %}
   </div>
 
   <div class="experience-columns">
     <div class="experience-column">
-      <h5>Education</h5>
+      <h3>Education</h3>
       {% for exp in education %}
-        <div class="experience-card">
+        <article class="experience-card">
           <div class="experience-time">{{ exp.time }}</div>
           <div class="experience-body">
-            <div class="experience-place">{{ exp.place }}</div>
+            <h4 class="experience-place">{{ exp.place }}</h4>
             <div class="experience-title">{{ exp.title }}</div>
             {% if exp.subtitle and exp.subtitle != "" %}
               <div class="experience-subtitle">{{ exp.subtitle }}</div>
             {% endif %}
           </div>
-        </div>
+        </article>
       {% endfor %}
     </div>
 
     <div class="experience-column">
-      <h5>Research & Industry Internships</h5>
+      <h3>Research &amp; Industry</h3>
       {% for exp in internships %}
-        <div class="experience-card">
+        <article class="experience-card">
           <div class="experience-time">{{ exp.time }}</div>
           <div class="experience-body">
-            <div class="experience-place">{{ exp.place }}</div>
+            <h4 class="experience-place">{{ exp.place }}</h4>
             <div class="experience-title">{{ exp.title }}</div>
             {% if exp.subtitle and exp.subtitle != "" %}
               <div class="experience-subtitle">{{ exp.subtitle }}</div>
             {% endif %}
           </div>
-        </div>
+        </article>
       {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
-
-<div class="docs-section" id="ack">
-  <h4>Acknowledgement</h4>
-  <p>
-    This website is based on the repository from <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>
-  </p>
-</div>
+<aside class="acknowledgement" aria-label="Acknowledgement">
+  Website design adapted from <a href="https://github.com/msaveski/www_personal" target="_blank" rel="noopener noreferrer">Martin Saveski's academic website template</a>.
+</aside>
