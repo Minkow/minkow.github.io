@@ -11,7 +11,7 @@ papers:
     bio: n
 
   - title: "Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration"
-    authors: "Ling-I Wu, <b>Minyu Chen</b>, Jingyang Li, Xi Chang, Guoqiang Li*"
+    authors: "Ling-I Wu, <b>Minyu Chen</b>, Jingyang Li, Xi Chang, Guoqiang Li"
     venue: "Findings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)"
     ccf: A
     selected: y
@@ -66,7 +66,7 @@ papers:
     bio: n
 
   - title: "DCoL-A: Agentic Dual Chain of Thinking Helps LLMs Pretend Logic Solvers"
-    authors: "<b>Minyu Chen</b>, Ling-I Wu, Ruibang Liu, Xi Chang, Jianxin Xue, Guoqiang Li*"
+    authors: "<b>Minyu Chen</b>, Ling-I Wu, Ruibang Liu, Xi Chang, Jianxin Xue, Guoqiang Li"
     venue: "Journal of Systems Architecture"
     ccf: B
     selected: y
@@ -76,7 +76,7 @@ papers:
     bio: n
 
   - title: "Enhancing Automated Loop Invariant Generation for Complex Programs with Large Language Models"
-    authors: "Runzhe Liu, <b>Minyu Chen</b>, Ling-I Wu, Jinyang Ke, Guoqiang Li"
+    authors: "Ruibang Liu, <b>Minyu Chen</b>, Ling-I Wu, Jinyang Ke, Guoqiang Li"
     venue: "Science of Computer Programming (2025)"
     ccf: B
     selected: y
