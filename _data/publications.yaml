@@ -1,4 +1,27 @@
 papers:
+  - title: "Teacher-Aware Evolution of Heuristic Programs from Learned Optimization Policies"
+    authors: "<b>Minyu Chen</b>, Song Qin, Ling-I Wu, Jianxin Xue, Guoqiang Li"
+    venue: "The 40th Conference on Neural Information Processing Systems (NeurIPS 2026)"
+    ccf: A
+    paper_pdf: "https://arxiv.org/pdf/2605.10634"
+    arXiv: "https://arxiv.org/abs/2605.10634"
+    selected: y
+    rl: y
+    cv: n
+    nlp: n
+    bio: n
+
+  - title: "Looped World Models"
+    authors: "Hongyuan Adam Lu, Z. L. Victor Wei, Qun Zhang, Jinrui Zeng, Bowen Cao, Lingwei Meng, Mocheng Li, Zezhong Wang, Haonan Yin, Naifu Xue, <b>Minyu Chen</b>, Cenyuan Zhang, Zefan Zhang, Hao Wei, Jiawei Zhou, Haoran Xu, Hao Yang, Ronglai Zuo, Tongda Xu, Yonghao Li, Jian Chen, Hebin Wang, Zeyu Gao, Yang Li, Wei Zhao, Qimin Zhong, Siqi Liu, Yumeng Zhang, Leyan Cui, Zhangyu Wang, Wai Lam"
+    venue: "Technical Report, 2026"
+    paper_pdf: "https://arxiv.org/pdf/2606.18208"
+    arXiv: "https://arxiv.org/abs/2606.18208"
+    selected: y
+    rl: y
+    cv: y
+    nlp: n
+    bio: n
+
   - title: "TipCoder: Reinforcement Learning Boosted Test-time Instruction Proposer for Code Generation"
     authors: "<b>Minyu Chen</b>, Sihao Wu, Ling-I Wu, Song Qin, Jingyang Li, Lei Ning, Jianxin Xue, Guoqiang Li"
     venue: "Findings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)"
@@ -36,6 +59,7 @@ papers:
     authors: "<b>Minyu Chen</b>, Guoqiang Li, Ling-I Wu, Ruibang Liu"
     venue: "Proceedings of the 2025 Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2025)"
     ccf: B
+    award: "Oral"
     paper_pdf: "https://aclanthology.org/2025.naacl-long.501.pdf"
     arXiv: "https://doi.org/10.18653/v1/2025.naacl-long.501"
     code: "https://github.com/Minkow/DCE-LLM"
@@ -89,6 +113,7 @@ papers:
     authors: "<b>Minyu Chen</b>, Guoqiang Li, Chen Ma, Jingyang Li, Hongfei Fu"
     venue: "The 29th International Conference on Computational Linguistics (COLING 2022)"
     ccf: B
+    award: "Oral"
     paper_pdf: "https://aclanthology.org/2022.coling-1.136.pdf"
     code: "https://github.com/minkow/repo4qa"
     selected: y
