@@ -34,6 +34,7 @@ papers:
     bio: n
 
   - title: "Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration"
+    paper_pdf: "https://aclanthology.org/2026.findings-acl.817.pdf"
     authors: "Ling-I Wu, <b>Minyu Chen</b>, Jingyang Li, Xi Chang, Guoqiang Li"
     venue: "Findings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)"
     ccf: A

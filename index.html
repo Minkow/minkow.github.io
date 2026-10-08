@@ -124,6 +124,22 @@ title: Home
   </div>
 </section>
 
+<section class="docs-section" id="teaching" aria-labelledby="teaching-heading">
+  <div class="section-heading">
+    <p class="section-kicker">Courses</p>
+    <h2 id="teaching-heading">Teaching</h2>
+  </div>
+  {% for course in site.data.teaching.courses %}
+    <article class="experience-card">
+      <div class="experience-time">{{ course.term }}</div>
+      <div class="experience-body">
+        <h3 class="experience-place">{{ course.title }}</h3>
+        <div class="experience-title">{{ course.level }} · Shenzhen Technology University</div>
+      </div>
+    </article>
+  {% endfor %}
+</section>
+
 <aside class="acknowledgement" aria-label="Acknowledgement">
   Website design adapted from <a href="https://github.com/msaveski/www_personal" target="_blank" rel="noopener noreferrer">Martin Saveski's academic website template</a>.
 </aside>

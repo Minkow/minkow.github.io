@@ -1,0 +1,13 @@
+courses:
+  - title: "Advances in Computer Science"
+    term: "Spring 2026"
+    level: "Graduate"
+  - title: "Mathematical Foundations of Artificial Intelligence"
+    term: "Fall 2026"
+    level: "Undergraduate"
+  - title: "Comprehensive Practicum in Network Attack and Defense"
+    term: "Fall 2026"
+    level: "Undergraduate"
+  - title: "Mobile Application Security Practicum"
+    term: "Fall 2026"
+    level: "Undergraduate"
