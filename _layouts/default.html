@@ -22,14 +22,7 @@
   <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | prepend: site.baseurl }}">
   <link rel="icon" type="image/png" href="{{ '/libs/icon.png' | prepend: site.baseurl }}">
 
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKCGX8H515"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YKCGX8H515', { 'anonymize_ip': true });
-  </script>
+  <script defer src="{{ '/libs/custom/analytics.js' | prepend: site.baseurl }}"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
