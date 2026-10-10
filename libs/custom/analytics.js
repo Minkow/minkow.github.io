@@ -36,7 +36,13 @@
   window.dataLayer = window.dataLayer || [];
   window.gtag = function () { window.dataLayer.push(arguments); };
   window.gtag('js', new Date());
-  window.gtag('config', measurementId);
+  // Use one explicit timezone for the weekday/hour heatmap.
+  var beijingTime = new Date(Date.now() + 8 * 60 * 60 * 1000);
+  var weekdays = ['7 Sun', '1 Mon', '2 Tue', '3 Wed', '4 Thu', '5 Fri', '6 Sat'];
+  window.gtag('config', measurementId, {
+    beijing_weekday: weekdays[beijingTime.getUTCDay()],
+    beijing_hour: String(beijingTime.getUTCHours()).padStart(2, '0')
+  });
   var tag = document.createElement('script');
   tag.async = true;
   tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
