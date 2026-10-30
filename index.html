@@ -38,7 +38,7 @@ title: Home
           <h3>{{ paper.title }}</h3>
           <div class="publication-links" aria-label="Links for {{ paper.title | strip_html }}">
             {% if paper.paper_pdf %}
-              <a href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">PDF</a>
+              <a href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">Paper</a>
             {% endif %}
             {% if paper.paper_url %}
               <a href="{{ paper.paper_url }}" target="_blank" rel="noopener noreferrer">Paper</a>

@@ -171,7 +171,7 @@ papers:
     authors: "<b>Minyu Chen</b>, Guoqiang Li"
     venue: "Mechanobiology in Medicine, 1, 2023"
     doi: "https://doi.org/10.1016/j.mbm.2023.100005"
-    paper_pdf: "/assets/papers/chatgpt-mechanobiology.pdf"
+    paper_url: "https://doi.org/10.1016/j.mbm.2023.100005"
     selected: y
     nlp: y
     bio: y
