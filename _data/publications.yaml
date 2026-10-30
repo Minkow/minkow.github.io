@@ -79,7 +79,7 @@ papers:
     authors: "<b>Minyu Chen</b>, Jingyang Li, Ling-I Wu, Guoqiang Li"
     venue: "IEEE Transactions on Artificial Intelligence (IEEE TAI), 7(3), 2026"
     doi: "https://doi.org/10.1109/TAI.2025.3602931"
-    paper_pdf: "/assets/papers/certified-local-transferability.pdf"
+    paper_url: "https://doi.org/10.1109/TAI.2025.3602931"
     selected: y
     rl: n
     cv: y
@@ -89,7 +89,7 @@ papers:
   - title: "Can Language Models Pretend Solvers? Logic Code Simulation with LLMs"
     authors: "<b>Minyu Chen</b>, Guoqiang Li, Ling-I Wu, Ruibang Liu, Yuxin Su, Xi Chang, Jianxin Xue"
     doi: "https://doi.org/10.1007/978-981-96-0602-3_6"
-    paper_pdf: "/assets/papers/logic-code-simulation.pdf"
+    paper_url: "https://doi.org/10.1007/978-981-96-0602-3_6"
     venue: "International Symposium on Dependable Software Engineering: Theories, Tools and Applications (SETTA 2024)"
     ccf: C
     selected: y
@@ -102,7 +102,7 @@ papers:
     authors: "<b>Minyu Chen</b>, Ling-I Wu, Ruibang Liu, Xi Chang, Jianxin Xue, Guoqiang Li"
     venue: "Journal of Systems Architecture, 175, 2026"
     doi: "https://doi.org/10.1016/j.sysarc.2026.103780"
-    paper_pdf: "/assets/papers/dcol-a.pdf"
+    paper_url: "https://doi.org/10.1016/j.sysarc.2026.103780"
     ccf: B
     selected: y
     rl: n
@@ -114,7 +114,7 @@ papers:
     authors: "Ruibang Liu, <b>Minyu Chen</b>, Ling-I Wu, Jingyu Ke, Guoqiang Li"
     venue: "Science of Computer Programming, 248, 2026"
     doi: "https://doi.org/10.1016/j.scico.2025.103387"
-    paper_pdf: "/assets/papers/acinv.pdf"
+    paper_url: "https://doi.org/10.1016/j.scico.2025.103387"
     ccf: B
     selected: y
     rl: n
@@ -139,7 +139,7 @@ papers:
     authors: "Jingyang Li, <b>Minyu Chen</b>, Guoqiang Li"
     venue: "Workshop on Recent Advances in Resilient and Trustworthy MAchine learning-driveN systems (ARTMAN 2025)"
     doi: "https://doi.org/10.1145/3733821.3763024"
-    paper_pdf: "/assets/papers/certified-triggers.pdf"
+    paper_url: "https://doi.org/10.1145/3733821.3763024"
     selected: y
     cv: y
 
@@ -147,7 +147,7 @@ papers:
     authors: "Jianxin Xue, Husheng Chen, Yaohua Hu, Sichen Hua, <b>Minyu Chen</b>, Ling-I Wu, Xi Chang"
     venue: "Empirical Software Engineering, 30, 2025"
     doi: "https://doi.org/10.1007/s10664-025-10679-1"
-    paper_pdf: "/assets/papers/less-activated-visual-networks.pdf"
+    paper_url: "https://doi.org/10.1007/s10664-025-10679-1"
     selected: y
     cv: y
 
@@ -155,7 +155,7 @@ papers:
     authors: "Jianxin Xue, Yaohua Hu, Sicheng Hua, <b>Minyu Chen</b>, Ling-I Wu, Xi Chang, Guoqiang Li"
     venue: "Neurocomputing, 624, 2025"
     doi: "https://doi.org/10.1016/j.neucom.2025.129449"
-    paper_pdf: "/assets/papers/lightweight-visual-backbone.pdf"
+    paper_url: "https://doi.org/10.1016/j.neucom.2025.129449"
     selected: y
     cv: y
 
@@ -163,7 +163,7 @@ papers:
     authors: "Jianxin Xue, Husheng Chen, Yaohua Hu, <b>Minyu Chen</b>, Ling-I Wu, Xi Chang"
     venue: "The 15th Asia-Pacific Symposium on Internetware (Internetware 2024)"
     doi: "https://doi.org/10.1145/3671016.3671392"
-    paper_pdf: "/assets/papers/yolov5-detection-latency.pdf"
+    paper_url: "https://doi.org/10.1145/3671016.3671392"
     selected: y
     cv: y
 
