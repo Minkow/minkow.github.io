@@ -19,6 +19,7 @@ title: Home
     <h2 id="news-heading">News</h2>
   </div>
   <ul>
+    <li>The code for <a href="https://github.com/Minkow/Teacher-Aware-Evolution" target="_blank" rel="noopener noreferrer">Teacher-Aware Evolution</a> and the code, model, and training data for <a href="https://github.com/Minkow/TipCoder" target="_blank" rel="noopener noreferrer">TipCoder</a> are now available.</li>
     <li>Our paper, <a href="https://arxiv.org/abs/2605.10634" target="_blank" rel="noopener noreferrer">Teacher-Aware Evolution of Heuristic Programs from Learned Optimization Policies</a>, has been accepted to NeurIPS 2026.</li>
     <li>I joined Shenzhen Technology University as an Assistant Professor in April 2026.</li>
   </ul>
@@ -57,6 +58,18 @@ title: Home
             {% endif %}
             {% if paper.code %}
               <a href="{{ paper.code }}" target="_blank" rel="noopener noreferrer">Code</a>
+            {% endif %}
+            {% if paper.doi %}
+              <a href="{{ paper.doi }}" target="_blank" rel="noopener noreferrer">DOI</a>
+            {% endif %}
+            {% if paper.project %}
+              <a href="{{ paper.project }}" target="_blank" rel="noopener noreferrer">OpenReview</a>
+            {% endif %}
+            {% if paper.model %}
+              <a href="{{ paper.model }}" target="_blank" rel="noopener noreferrer">Model</a>
+            {% endif %}
+            {% if paper.dataset %}
+              <a href="{{ paper.dataset }}" target="_blank" rel="noopener noreferrer">Data</a>
             {% endif %}
           </div>
         </div>
